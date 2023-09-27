@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <!--Nav bar-->
+  <header class="container mx-auto px-4 py-8 flex items-center justify-between gap-4" data-header>
+    <a href="/">
+      <img src="/images/logo.png" alt="alurageek logo">
+    </a>
+    <div class="order-1 md:order-none md:relative" data-search-container>
+      <input data-search class="hidden md:block border-none bg-neutral-100 rounded-full py-3 pr-32 pl-4" type="text"
+        placeholder="¿Qué deseas buscar?">
+      <img class="w-6 hover:cursor-pointer md:absolute md:top-0 md:right-4 md:bottom-0 md:h-full md:object-contain"
+        src="/images/search-icon.png" alt="search icon">
+    </div>
+  </header>
+  <!--Nav bar-->
+
+  <!--Hero-->
+  <section
+    class="bg-[url('/images/hero.png')] bg-no-repeat bg-cover bg-center relative after:content-[''] after:absolute after:inset-0 after:bg-black after:opacity-40 after:z-[1]">
+    <div
+      class="container mx-auto px-4 min-h-svh py-16 flex flex-col justify-center items-start relative z-[2] md:justify-end">
+      <h1 class="text-6xl text-neutral-100 font-black">Agosto Promocional</h1>
+      <p class="text-2xl text-neutral-100 mt-8">Productos seleccionados con 33% de descuento</p>
+      <a class="py-3 px-4 text-neutral-100 font-bold rounded-sm bg-indigo-600 mt-4 w-auto hover:bg-indigo-800"
+        href="/views/products-category.html?category=Consolas">Ver consolas</a>
+    </div>
+  </section>
+  <!--Hero-->
+
+  <main class="container px-4 py-8 mx-auto" data-categories>
+  </main>
+
+  <footer class="bg-indigo-50">
+    <div class="container mx-auto px-4 py-8 md:flex md:justify-evenly ">
+      <div class="flex-grow-[1] lg:flex lg:items-start lg:justify-evenly">
+        <img class="w-56 mx-auto md:mx-0 lg:w-40" src="/images/logo.png" alt="alurageek logo">
+        <ul class="text-center mt-4 md:text-left lg:mt-0">
+          <li class="mb-4 last-of-type:mb-0"><a class="text-base" href="#">Quienes Somos</a></li>
+          <li class="mb-4 last-of-type:mb-0"><a class="text-base" href="#">Politicas de privacidad</a></li>
+          <li class="mb-4 last-of-type:mb-0"><a class="text-base" href="#">Programa de fidelidad</a></li>
+          <li class="mb-4 last-of-type:mb-0"><a class="text-base" href="#">Nuestras tiendas</a></li>
+          <li class="mb-4 last-of-type:mb-0"><a class="text-base" href="#">Quiero ser financiado</a></li>
+          <li class="mb-4 last-of-type:mb-0"><a class="text-base" href="#">Anuncie aquí</a></li>
+        </ul>
+      </div>
+      <div class="mt-8 flex-grow-[2] md:mt-0" data-contact-container>
+        <p class="text-xl font-bold text-neutral-700">Hable con nostros</p>
+        <form class="mt-4 grid" data-contact>
+          <label class="text-sm" for="name">Nombre</label>
+          <input class="border-none mt-2 mb-4 rounded-sm p-4" type="text" id="name" placeholder="ej. Alexander Pozas">
+          <label class="text-sm" for="message">Mensaje</label>
+          <textarea class="rounded-sm mt-2 p-4" id="message" cols="10" rows="5" placeholder="Escribe tu mensaje"></textarea>
+          <input class="py-3 px-4 text-neutral-100 font-bold rounded-sm bg-indigo-600 mt-4 md:w-1/2 hover:bg-indigo-800" type="submit" value="Enviar mensaje"/>
+        </form>
+      </div>
+    </div>
+    <div class="p-8 text-center bg-white">
+      <p class="font-bold text-base">Desarrollado por Alexander Pozas 2023</p>
+    </div>
+  </footer>
+
+  <script src="./controllers/CategoryController.js" type='module'></script>
+  <script src="./controllers/ContactController.js" type='module'></script>
+</body>
+
+</html>

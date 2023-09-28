@@ -18,7 +18,7 @@ const AllProductsByCategory = async () => {
     const homeBtn = document.createElement('a');
     homeBtn.className = 'inline-block py-3 px-4 text-neutral-100 font-bold rounded-sm bg-indigo-600 mt-4 w-auto hover:bg-indigo-800';
     homeBtn.textContent = 'Ir a Inicio';
-    homeBtn.href = '/'
+    homeBtn.href = '/alura-geek-vanillajs/'
 
     productsHeader.appendChild(productsHeadline);
     productsHeader.appendChild(homeBtn);

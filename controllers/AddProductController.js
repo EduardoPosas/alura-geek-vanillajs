@@ -50,12 +50,12 @@ const handleSubmit = async (e) => {
 
     if (isEditing) {
         await updateProduct(formData, user.id);
-        window.location.href = '../views/products.html';
+        window.location.href = '/alura-geek-vanillajs/views/products.html';
         return;
     }
 
     await addProduct(formData);
-    window.location.href = '../views/products.html';
+    window.location.href = '/alura-geek-vanillajs/views/products.html';
 }
 
 const fillFormSelect = async () => {
@@ -80,7 +80,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     const session = JSON.parse(sessionStorage.getItem('user'));
     console.log(session)
     if (!session) {
-        window.location.href = '../index.html'
+        window.location.href = '/alura-geek-vanillajs/index.html'
     };
 
     fillFormSelect();
@@ -109,7 +109,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             addProductForm.querySelector('[id="description"]').value = description;
             return;
         } else {
-            window.location.href = '../views/products.html';
+            window.location.href = '/alura-geek-vanillajs/views/products.html';
         }
     }
 

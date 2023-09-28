@@ -31,7 +31,7 @@ const AllCategories = async () => {
         const headlineLink = document.createElement('a');
         headlineLink.className = "text-lg text-indigo-600 flex items-center after:content-[url('/images/right-arrow.svg')] after:ml-2 after:transition-transform after:ease-in-out after:duration-300 hover:after:translate-x-1";
         headlineLink.textContent = 'Ver Todo';
-        headlineLink.href = `../views/products-category.html?category=${category}`;
+        headlineLink.href = `/alura-geek-vanillajs/views/products-category.html?category=${category}`;
 
         categoryHeadline.appendChild(headline);
         categoryHeadline.appendChild(headlineLink);
@@ -61,7 +61,7 @@ const AllCategories = async () => {
             const productLink = document.createElement('a');
             productLink.className = 'text-indigo-600 inline-block mt-4 transition-all duration-300 ease-in-out hover:text-indigo-800 hover:font-bold';
             productLink.textContent = 'Ver Producto';
-            productLink.href = `/views/product-description.html?id=${id}`;
+            productLink.href = `/alura-geek-vanillajs/views/product-description.html?id=${id}`;
 
             productContainer.appendChild(productImg);
             productContainer.appendChild(productTitle);

@@ -49,7 +49,7 @@ const AllProducts = async () => {
         editButton.alt = 'edit product button'
         productContainer.appendChild(editButton);
         editButton.onclick = () => {
-            window.location.href = `../views/add-product.html?id=${id}`;
+            window.location.href = `/alura-geek-vanillajs/views/add-product.html?id=${id}`;
         }
 
         produtcsContainer.appendChild(productContainer);

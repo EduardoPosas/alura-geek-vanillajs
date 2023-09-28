@@ -56,7 +56,7 @@ const handleLogin = async (e) => {
 
     // Crear sesión de usuario
     sessionStorage.setItem('user', JSON.stringify({email: user.email, isAdmin: true}));
-    window.location.href  = '../views/products.html';    
+    window.location.href  = '/alura-geek-vanillajs/views/products.html';    
 }
 
 

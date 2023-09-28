@@ -7,11 +7,11 @@ const productDescription = async () => {
     const id = url.searchParams.get('id');
     console.log(id);
 
-    if (!id) window.location.href = '/';
+    if (!id) window.location.href = '/alura-geek-vanillajs/';
 
     const user = await productById(id);
 
-    if (!user) window.location.href = '/';
+    if (!user) window.location.href = '/alura-geek-vanillajs/';
 
     console.log(user);
 
@@ -43,7 +43,7 @@ const productDescription = async () => {
             <img class="h-[15rem] w-full object-cover object-top" src=${imageUrl} alt="product image">
             <h3 class="text-base mt-4">${name}</h3>
             <p class="font-bold text-neutral-700 text-xl mt-4">$${price}</p>
-            <a href="/views/product-description.html?id=${similarId}" class="text-indigo-600 inline-block mt-4 transition-all duration-300 ease-in-out hover:text-indigo-800 hover:font-bold">Ver Producto</a>
+            <a href="/alura-geek-vanillajs/views/product-description.html?id=${similarId}" class="text-indigo-600 inline-block mt-4 transition-all duration-300 ease-in-out hover:text-indigo-800 hover:font-bold">Ver Producto</a>
             </div>
         `;
 

@@ -3,12 +3,12 @@
 
 <head>
   <meta charset="UTF-8" />
+  <!-- <link rel="icon" type="image/svg+xml" href="/vite.svg" /> -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vite App</title>
   
-  <script type="module" crossorigin src="/alura-geek-vanillajs/assets/main-55238f64.js"></script>
+  <script type="module" crossorigin src="/alura-geek-vanillajs/assets/products-3a91a2b6.js"></script>
   <link rel="modulepreload" crossorigin href="/alura-geek-vanillajs/assets/style-ad932b61.js">
-  <link rel="modulepreload" crossorigin href="/alura-geek-vanillajs/assets/CategoryService-5452352c.js">
   <link rel="modulepreload" crossorigin href="/alura-geek-vanillajs/assets/ProductService-4ab90952.js">
   <link rel="modulepreload" crossorigin href="/alura-geek-vanillajs/assets/ContactController-aba72802.js">
   <link rel="stylesheet" href="/alura-geek-vanillajs/assets/style-27bc3725.css">
@@ -16,12 +16,12 @@
 
 <body>
   <!--Nav bar-->
-  <header class="container mx-auto px-4 py-8 flex items-center justify-between gap-4" data-header>
+  <header class="container mx-auto px-4 py-8 flex items-center justify-between gap-4">
     <a href="/">
       <img src="/alura-geek-vanillajs/images/logo.png" alt="alurageek logo">
     </a>
-    <div class="order-1 md:order-none md:relative" data-search-container>
-      <input data-search class="hidden md:block border-none bg-neutral-100 rounded-full py-3 pr-32 pl-4" type="text"
+    <div class="order-1 md:order-none md:relative">
+      <input class="hidden md:block border-none bg-neutral-100 rounded-full py-3 pr-32 pl-4" type="text"
         placeholder="¿Qué deseas buscar?">
       <img class="w-6 hover:cursor-pointer md:absolute md:top-0 md:right-4 md:bottom-0 md:h-full md:object-contain"
         src="/alura-geek-vanillajs/images/search-icon.png" alt="search icon">
@@ -29,21 +29,16 @@
   </header>
   <!--Nav bar-->
 
-  <!--Hero-->
-  <section
-    class="bg-[url('/images/hero.png')] bg-no-repeat bg-cover bg-center relative after:content-[''] after:absolute after:inset-0 after:bg-black after:opacity-40 after:z-[1]">
-    <div
-      class="container mx-auto px-4 min-h-svh py-16 flex flex-col justify-center items-start relative z-[2] md:justify-end">
-      <h1 class="text-6xl text-neutral-100 font-black">Agosto Promocional</h1>
-      <p class="text-2xl text-neutral-100 mt-8">Productos seleccionados con 33% de descuento</p>
-      <a class="py-3 px-4 text-neutral-100 font-bold rounded-sm bg-indigo-600 mt-4 w-auto hover:bg-indigo-800"
-        href="/views/products-category.html?category=Consolas">Ver consolas</a>
+  <section class="container px-4 py-8 mx-auto">
+    <div class="md:flex md:items-center md: justify-between">
+      <h2 class="text-3xl font-bold text-neutral-700">Todos los productos</h2>
+      <a class=" inline-block py-3 px-4 text-neutral-100 font-bold rounded-sm bg-indigo-600 mt-4 w-auto hover:bg-indigo-800" href="/views/add-product.html">Agregar Producto</a>
     </div>
-  </section>
-  <!--Hero-->
+    <div class="mt-8 grid grid-cols-2 gap-4 md:grid-cols-4 lg:grid-cols-6" data-products-container>
 
-  <main class="container px-4 py-8 mx-auto" data-categories>
-  </main>
+    </div> <!--category cards-->
+  </section>
+  
 
   <footer class="bg-indigo-50">
     <div class="container mx-auto px-4 py-8 md:flex md:justify-evenly ">
@@ -76,6 +71,8 @@
 
   
   
+
+
 </body>
 
 </html>

@@ -22,7 +22,7 @@ const handleSearching = (e, products) => {
         const descriptionLink = document.createElement('a');
         descriptionLink.className = 'block w-full'
         descriptionLink.textContent = name;
-        descriptionLink.href = `/views/product-description.html?id=${id}`;
+        descriptionLink.href = `/alura-geek-vanillajs/views/product-description.html?id=${id}`;
 
         li.appendChild(descriptionLink);
         ul.appendChild(li);

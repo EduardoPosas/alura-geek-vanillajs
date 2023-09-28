@@ -11,11 +11,11 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'index.html'),
-        add: resolve(__dirname, 'views/add-product.html'),
-        login: resolve(__dirname, 'views/login.html'),
-        description: resolve(__dirname, 'views/product-description.html'),
-        category: resolve(__dirname, 'views/products-category.html'),
-        products: resolve(__dirname, 'views/products.html'),
+        add: resolve(__dirname, 'views', 'add-product.html'),
+        login: resolve(__dirname, 'views', 'login.html'),
+        description: resolve(__dirname, 'views', 'product-description.html'),
+        category: resolve(__dirname, 'views', 'products-category.html'),
+        products: resolve(__dirname, 'views', 'products.html'),
       },
     }
   }

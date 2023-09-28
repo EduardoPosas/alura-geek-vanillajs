@@ -1,4 +1,4 @@
-import"./style-429ee022.js";import{b as w,a as b}from"./ProductService-4ab90952.js";const y=async()=>{const t=new URL(window.location.href).searchParams.get("id");console.log(t),t||(window.location.href="/");const o=await w(t);o||(window.location.href="/"),console.log(o);const{name:c,price:i,description:r,imageUrl:s,category:a,id:l}=o,n=document.querySelector("[data-product-description]"),d=`
+import"./style-ad932b61.js";import{b as w,a as b}from"./ProductService-4ab90952.js";const y=async()=>{const t=new URL(window.location.href).searchParams.get("id");console.log(t),t||(window.location.href="/");const o=await w(t);o||(window.location.href="/"),console.log(o);const{name:c,price:i,description:r,imageUrl:s,category:a,id:l}=o,n=document.querySelector("[data-product-description]"),d=`
                 <img class="w-full md:w-1/2 object-cover object-top h-[20rem] md:h-[30rem] lg:h-[40rem]" src=${s} alt=${r}>
                 <div class="py-2 flex flex-col gap-4 md:justify-center grow">
                     <h2 class="text-2xl md:text-4xl lg:text-6xl leading-3">${c}</h2>

@@ -34,7 +34,7 @@ const AllProducts = async () => {
 
         const deleteButton = document.createElement('img');
         deleteButton.className = 'w-[1rem] invert absolute top-1 right-1 cursor-pointer';
-        deleteButton.src = '../public/images/delete-icon.svg';
+        deleteButton.src = '../images/delete-icon.svg';
         deleteButton.alt = 'delete button';
         productContainer.appendChild(deleteButton);
         deleteButton.onclick = async () => {
@@ -45,7 +45,7 @@ const AllProducts = async () => {
 
         const editButton = document.createElement('img');
         editButton.className = 'w-[1rem] invert absolute top-1 right-6 cursor-pointer';
-        editButton.src = '../public/images/edit-icon.svg'
+        editButton.src = '../images/edit-icon.svg'
         editButton.alt = 'edit product button'
         productContainer.appendChild(editButton);
         editButton.onclick = () => {

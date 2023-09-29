@@ -8,7 +8,14 @@ import handleSearching from "../helpers/SearchBar.js";
 const searchBar = document.querySelector('[data-search]');
 
 const AllCategories = async () => {
+    const spinner = document.querySelector('.sk-circle');
+    spinner.classList.add('display-block');
+    spinner.classList.remove('display-none');
+
     const categories = await CategoryList();
+
+    spinner.classList.add('display-none');
+    spinner.classList.remove('display-block');
 
     categories.forEach(async categoryItem => {
         const { id, category } = categoryItem;

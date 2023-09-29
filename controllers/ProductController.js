@@ -2,7 +2,14 @@ import { productsList, deleteProduct } from "../services/ProductService.js";
 
 
 const AllProducts = async () => {
+    const spinner = document.querySelector('.sk-circle');
+    spinner.classList.add('display-block');
+    spinner.classList.remove('display-none');
+
     const data = await productsList();
+
+    spinner.classList.add('display-none');
+    spinner.classList.remove('display-block');
 
     const produtcsContainer = document.querySelector('[data-products-container]');
 
@@ -60,7 +67,7 @@ AllProducts();
 document.addEventListener('DOMContentLoaded', () => {
     const session = JSON.parse(sessionStorage.getItem('user'));
     console.log(session)
-    if( !session ) {
+    if (!session) {
         window.location.href = '../index.html'
     };
 })

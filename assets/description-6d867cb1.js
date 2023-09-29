@@ -1,4 +1,4 @@
-import"./style-ad932b61.js";import{b as w,a as v}from"./ProductService-4ab90952.js";const b=async()=>{const t=new URL(window.location.href).searchParams.get("id");console.log(t),t||(window.location.href="/alura-geek-vanillajs/");const o=await w(t);o||(window.location.href="/alura-geek-vanillajs/"),console.log(o);const{name:r,price:i,description:a,imageUrl:c,category:l,id:s}=o,n=document.querySelector("[data-product-description]"),d=`
+import"./style-952d8456.js";import{b as w,a as v}from"./ProductService-4ab90952.js";const b=async()=>{const t=new URL(window.location.href).searchParams.get("id");console.log(t),t||(window.location.href="/alura-geek-vanillajs/");const o=await w(t);o||(window.location.href="/alura-geek-vanillajs/"),console.log(o);const{name:r,price:i,description:a,imageUrl:c,category:l,id:s}=o,n=document.querySelector("[data-product-description]"),d=`
                 <img class="w-full md:w-1/2 object-cover object-top h-[20rem] md:h-[30rem] lg:h-[40rem]" src=${c} alt=${a}>
                 <div class="py-2 flex flex-col gap-4 md:justify-center grow">
                     <h2 class="text-2xl md:text-4xl lg:text-6xl leading-3">${r}</h2>
